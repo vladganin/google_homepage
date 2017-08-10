@@ -50,7 +50,7 @@ body {
   width: 100%;
   height: auto;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 * {
@@ -66,8 +66,8 @@ header {
 }
 
 ul {
-  margin: 20px;
-  margin-top: 10px;
+  margin: 25px;
+  margin-top: 15px;
 }
 
 li {
@@ -105,8 +105,7 @@ li {
 }
 
 .buttons, #searchbox {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #searchbox {
@@ -136,3 +135,42 @@ li {
   padding: 0 16px;
   text-align: center;
 }
+
+.buttons input[type="submit"]:hover {
+  border: 1px solid rgba(0,0,0,0.09);
+  color: black;
+}
+
+/* Footer. It is comprised of <footer>
+ and 2 uls with classes: bar left/ bar right. */
+
+ footer {
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   padding: 12px;
+   background-color: #f2f2f2;
+   border-top: 1px solid rgba(0,0,0,0.09);
+ }
+
+ footer ul {
+   float: left;
+   padding: 0 10px;
+   margin: 0;
+ }
+
+ footer .right {
+   float: right;
+   padding: 0 10px;
+   margin: 0;
+ }
+
+ footer a {
+   text-decoration: none;
+   color: #757575;
+   font-size: 13px;
+ }
+
+ footer a:hover {
+   text-decoration: underline;
+ }
