@@ -48,6 +48,13 @@ table {
 
 body {
   width: 100%;
+  height: auto;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header {
@@ -80,18 +87,52 @@ li {
     text-decoration: underline;
 }
 
-section {
+/* The logo section */
+.center {
+    content: "";
+    display: table;
     clear: both;
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 .logo {
-    border: 1px solid red;
-    margin: 100px;
-    margin-top: 120px;
     text-align: center;
 }
 
 .logo img {
-    width: 280px;
+    width: 270px;
+    margin-top: 25%;
+}
+
+.buttons, #searchbox {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchbox {
+  width: 550px;
+  display: block;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 0 0 0 rgba(0,0,0,0.08);
+}
+
+.buttons {
+  margin-top: 30px;
+  width: 300px;
+}
+
+.buttons input[type="submit"] {
+  height: 35px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 3px 0 0;
+  padding: 0 16px;
+  text-align: center;
 }

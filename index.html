@@ -21,13 +21,14 @@
             <div class="logo">
                 <img src="logo.png">
             </div>
-            <div class="searchbar">
-                <input type="text">
-            </div>
-            <div class="buttons">
-                <p>Google Search</p>
-                <p>I'm Feeling Lucky</p>
-            </div>
+            <form class="searchbar">
+                <form method="get" action:"http://www.google.com/search">
+                <input id="searchbox" type="text" name="search" size="41">
+                <div class="buttons">
+                    <input type="submit" id="search" value="Google Search">
+                    <input type="submit" id="luck" value="I'm Feeling Lucky">
+                </div>
+            </form>
         </section>
 
         <footer class="bar">
